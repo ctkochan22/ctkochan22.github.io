@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Margins, Borders, and Padding</title>
+    <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="blog_template.css">
+</head>
+
+
+<header>
+  <div class="nav">Projects</div>
+  <div class="nav">About Me</div>
+  <a href="blog_index.html"><div class="nav">Blog</div></a>
+  <div class="nav">Contact</div>
+</header>
+
+
+<body>
+  <div id="content">
+      <h1 id="title">Understanding Margins, Borders, and Padding</h1>
+      <h3>Technical Blog</h3>
+      <p>August 10th, 2015</p>
+
+      <div id="text_body">
+        <a>The Overview</a>
+        <ul>
+          <li>The margin (TM) is the space around the content. Adjusting this will adjust the HTML elements next to it</li>
+          <li>The border (TB) is the edge of the content.</li>
+          <li>The padding (TP) is the space between the content of the box and the border. This will move the border closer or further</li>
+        </ul>
+        <p>This is the bare-knuckle explanation of margin, border, and padding. However, without context or experience, this is hard to wrap one’s mind around. A nice real-world example to conceptualize these terms is packaging and shipping an item.</p>
+        <p>
+        When shipping something using UPS or Fedex, you always start with the item you are sending and a box to put it in. Now the size and type of box as well as how the item is packaged is determined by what the item is.</p>
+
+        <p>
+        Lets start with the borders. The border is like the box itself. If you are shipping an item that is already in a box, you may not need another box (border). If it is a small and non-crushable item, you can use a paper packaging (thin border). And if it is a bigger item, you may need a thick cardboard box (thick border). In CSS, borders are what surround your content. You can determine whether a border is necessary, how thick, and whether it is dotted or solid. </p>
+
+        <p>
+        Padding is just what it sounds like and serves the same purpose in our real world example. If you are shipping a delicate, breakable item, you should add padding to your packaging. So you pick a box that leaves some space between the box itself and the item you are shipping so that you can put newspapers or plastic fillers so that you can protect your item. Padding in CSS works the same way. Maybe your content needs a bit of space from the border, you can manipulate the padding to do that.</p>
+
+        <p>
+        Margins is a bit harder to explain with our live example, but imagine you are shipping a fragile glass vase. Even though you may have added a large amount of padding (space between the box and your item) and stuffed it with newspaper, you are still worried it can break during shipment. Margin spacing is like asking for a package to be handled with care. The mail man will handle it will more care as well as place the package further away from other packages in transit. In CSS, manipulating your margins will do just that, it will create or eliminate space between your border and other borders of other elements.     </p>
+
+
+
+
+
+        <p id="blog-nav">
+          <a href="c1-chefs-kitchen">Previous</a>
+          <a href="blog_index.html">Index</a>
+          <a href="blog_index.html">Next</a>
+        </p>
+      </div>
+  </div>
+
+
+  <div id="second">
+    <h1>About Me</h1>
+    <img src="../imgs/profile.png"/ id="profile_img">
+    <p id="bio">My name is Christopher Tseng. I am currently enrolled in the Dev Bootcamp Program. This site will contain my portfolio of my work as well as a documentation of my experiences throughout the program. </p>
+    <p id="social"><a href="https://www.facebook.com/chris.tseng.31">Facebook</a> </p>
+    <p id="social"><a href="https://twitter.com/ctkochan22">Twitter</a> </p>
+    <p id="social"><a href="https://www.linkedin.com/profile/view?id=193525667&trk=nav_responsive_tab_profile_pic">LinkedIn</a> </p>
+    <p id="social"><a href="http://www.quora.com/Christopher-Tseng-2">Quora</a> </p>
+    <p id="social"><a href="https://github.com/ctkochan22">GitHub</a> </p>
+  </div>
+
+
+</body>
+
+</html>

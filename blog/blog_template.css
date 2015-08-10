@@ -68,15 +68,24 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: white;
+  padding-left: 10px;
+  padding-bottom: 10px;
+
+  font-family: Trebuchet, Verdana;
+
 
 }
 
 h3 {
+
+  font-family: Trebuchet, Verdana;
   margin-bottom:-10px;
   margin-top: -15px;
 }
 
-#text_body p {
+
+
+#text_body {
   margin-left: 20px;
   margin-right: 20px;
 
