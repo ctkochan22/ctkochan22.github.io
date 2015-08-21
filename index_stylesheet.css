@@ -30,7 +30,6 @@ header {
   position: relative;
   height: 40px;
   width: 120px;
-  top: 0px;
   left: 5%;
   border-top: 2px solid #09DBBE;
 
@@ -46,6 +45,14 @@ header {
 
   color: black;
 }
+
+#Logo {
+  position: absolute;
+  height: 35px;
+  margin-left: 4px;
+  width: auto;
+}
+
 /*-- --*/
 /*-- --*/
 
@@ -69,10 +76,14 @@ body {
 #main_img {
   display: block;
   position: relative;
+
   width: 840px;
   height: auto;
-  margin: auto;
+
+  margin-right: auto;
+  margin-left: auto;
   margin-top: 35px;
+
   border: 3px solid #09DBBE;
 }
 
