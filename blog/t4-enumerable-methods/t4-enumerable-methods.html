@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Featured Methods</title>
+    <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="../blog_template.css">
+</head>
+
+
+<header>
+  <a href="../../index.html"><img src="../../imgs/Logo_Fill_Black.png"/ id="Logo"></a>
+  <div class="nav">Projects</div>
+  <div class="nav">About Me</div>
+  <a href="../blog_index.html"><div class="nav">Blog</div></a>
+  <div class="nav">Contact</div>
+</header>
+
+
+<body>
+  <div id="content">
+      <h1 id="title">Featured Methods: map, group_by, cycle</h1>
+      <h3>Technical Blog</h3>
+      <p>August 21st, 2015</p>
+
+      <div id="text_body">
+        <p>For your understanding, but mainly for my own, I will be going over various methods that I either have just used for the first time, or methods that Dev Bootcamp highlighted in particular this week. For this week, they are the map, group_by, and cycle enumerable methods.</p>
+
+        <p>Key things to understand: <br>
+          Like all enumerable methods, when called, this method will apply itself to every element in a set. This includes every character of a string, element in an array, and key/pair value of a hash. The block is what you want it to do to every element, the result of which will be placed in a new array that needs to be assigned to something, printed, or returned.
+        </p>
+
+        <p><a id="bold">Map {|obj| block} --> array</a><br>
+          Input: Set of Objects<br>
+          Output: New Array populated with the block
+        </p>
+        <p>
+          The map method will iterate through a set of objects and return a new array that is populated by the results of the block. If not block is given, an enumerator is returned instead.
+        </p>
+
+        <img src="t4-pic-1.png"/><br>
+        <a>In this example, the method goes through each element in the array and multiplies it by 3. The results are then pushed into a new array.<br><br></a>
+
+        <p><a id="bold">Group_by {|obj| block} → a hash</a><br>
+          Input: Set of Objects<br>
+          Output: New Hash organized where keys are the results of the block, whose values are the elements that gave that result
+        </p>
+
+        <p>The group_by method will iterate through a set of objects and run each element through the block. The result of which will become a key, and if there are more than one element that gives the same result, the element will be placed in an array with the other elements that gave the same result. </p>
+
+        <img src="t4-pic-2.png"/><br>
+        <a>In this example, we find the modulus of each element in the array when divided by 3. For this array, there are several elements that give the same value (the modulus of elements 3 and 6 result in 0). As a result, each result being its own key, will have a value pair that is both 3 and 6.<br><br></a>
+
+        <p><a id="bold">Cycle (n=nil) {|obj| block } </a><br>
+          Input: Set of Objects, “n” needs an integer<br>
+          Output: Returns nil
+        </p>
+
+        <p>The cycle method will iterate through a set of objects and run the block as many times as dictated by the integer given to the “n” variable (within the parentheses). If no value is given to n, it will default to nil and the method will run forever. This method does not return anything, thus its results cannot be saved into a variable.
+        </p>
+
+        <img src="t4-pic-3.png"/ >
+
+        <p id="blog-nav">
+          <a href="../c3-thinking-style.html">Previous</a>
+          <a href="../blog_index.html">Index</a>
+          <a href="../blog_index.html">Next</a>
+        </p>
+      </div>
+  </div>
+
+
+  <div id="second">
+    <h1>About Me</h1>
+    <img src="../../imgs/profile.png"/ id="profile_img">
+    <p id="bio">My name is Christopher Tseng. I am currently enrolled in the Dev Bootcamp Program. This site will contain my portfolio of my work as well as a documentation of my experiences throughout the program. </p>
+    <p id="social"><a href="https://www.facebook.com/chris.tseng.31">Facebook</a> </p>
+    <p id="social"><a href="https://twitter.com/ctkochan22">Twitter</a> </p>
+    <p id="social"><a href="https://www.linkedin.com/profile/view?id=193525667&trk=nav_responsive_tab_profile_pic">LinkedIn</a> </p>
+    <p id="social"><a href="http://www.quora.com/Christopher-Tseng-2">Quora</a> </p>
+    <p id="social"><a href="https://github.com/ctkochan22">GitHub</a> </p>
+  </div>
+
+
+</body>
+
+</html>

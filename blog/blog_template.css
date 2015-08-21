@@ -102,6 +102,10 @@ h3 {
 
 }
 
+#bold {
+  font-weight: bold;
+}
+
 #blog-nav {
   text-align: center;
   word-spacing: 200px;
