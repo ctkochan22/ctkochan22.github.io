@@ -1,0 +1,216 @@
+/*-- --*/
+/*--
+Light Blue/Cyan= #5DA7FF
+Black w/ Blue tint= #130F14
+Bluish Grey= #F5FAFF
+Cyan= #09DBBE
+
+
+* {
+  border: 1px dotted red;
+}
+--*/
+
+
+/*--** HEADER **--*/
+/*-- --*/
+
+header {
+  display: block;
+  position: fixed;
+  height: 40px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: black; /*-- Black/purpe/blue --*/
+}
+
+.nav {
+  display: inline-block;
+  position: relative;
+  height: 40px;
+  width: 120px;
+  left: 5%;
+  border-top: 2px solid #09DBBE;
+
+  text-align: center;
+  color: white;
+  font-family: Tahoma, Arial;
+  font-weight: bold;
+}
+
+.nav:hover {
+  border: 1px solid #09DBBE;
+  background-color: #09DBBE;
+
+  color: black;
+}
+
+#Logo {
+  position: absolute;
+  height: 35px;
+  margin-left: 4px;
+  width: auto;
+}
+/*-- --*/
+/*-- --*/
+
+
+body {
+  /*background-image: url("japan_back.jpg");*/
+  background-color: grey;
+}
+
+
+
+/*-- **FOOTER** --*/
+/*-- --*/
+footer {
+
+  position: relative;
+  background-color: #09DBBE;
+  width: 102%;
+  height: 450px;
+  margin-left: -10px;
+  bottom: -10px;
+
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+#profile_img {
+  display: block;
+  position: relative;
+  height: 250px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+h1 {
+
+  text-align: center;
+}
+
+
+#bio {
+  display: block;
+  position: relative;
+  text-align: center;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#social {
+  display: inline-block;
+  width: 100px;
+  margin-left: 10%;
+
+}
+/*-- --*//*-- --*/
+/*-- --*//*-- --*/
+
+#panel_1 {
+
+  /*background-color: green;*/
+  background-image: url("japan_back.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  width: 101%;
+  height: 700px;
+  margin-left: -10px;
+  margin-bottom: 30px;
+
+  padding-top: 50px;
+}
+
+#front_img {
+  width: 101%;
+  height: auto;
+  margin-left: -10px;
+
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+#main_img {
+  display: block;
+  position: relative;
+
+  width: 840px;
+  height: auto;
+
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 35px;
+
+  border: 3px solid #09DBBE;
+}
+
+#second_img {
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  border-top: 2px solid #09DBBE;
+  background-color: white;
+  height: 150px;
+  width: 200px;
+  margin-top: 30px;
+  margin-left: 10px;
+
+  font-size: 25px;
+}
+
+/*-- **BODY CONTENT** --*/
+/*-- --*/
+#content {
+  position: relative;
+  width: 80%;
+
+  border-top: 4px solid #09DBBE;
+
+  margin-top: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding-left: 10px;
+  padding-bottom: 10px;
+
+  font-family: Trebuchet, Verdana;
+
+
+h1 {
+
+  text-align: center;
+}
+
+
+
+#profile_img {
+  display: block;
+  position: relative;
+  height: 250px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#bio {
+  display: block;
+  position: relative;
+  text-align: center;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
