@@ -65,20 +65,37 @@ body {
 
 /*-- **BODY CONTENT** --*/
 /*-- --*/
+#panel_1 {
+
+  /*background-color: green;*/
+  background-image: url("../about/japan_back.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  width: 101%;
+/*  height: 700px;*/
+  margin-left: -10px;
+  margin-bottom: 10px;
+
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
 #content {
   position: static;
   width: 80%;
 
   border-top: 4px solid #09DBBE;
 
-  margin-top: 50px;
+  margin-top: 400px;
   margin-left: auto;
   margin-right: auto;
-  background-color: white;
+  background-color: #F5FAFF;
   padding-left: 10px;
   padding-bottom: 10px;
 
-  font-family: Trebuchet, Verdana;
+  font-family: Arial, Verdana;
+
 
 
 }
@@ -113,6 +130,15 @@ h3 {
   font-weight: bold;
 }
 
+#body_img_1 {
+  width: 700px;
+  height: auto;
+}
+
+#body_img_2 {
+  border-top: 2px solid #09DBBE;
+  width: 80%;
+}
 
 
 /*-- **FOOTER** --*/
@@ -163,7 +189,4 @@ h1 {
 
 }
 
-.body_img {
-  border-top: 2px solid #09DBBE;
-  width: 80%;
-}
+
