@@ -26,7 +26,32 @@
       <p>September 6, 2015</p>
 
       <div id="text_body">
-        <p>My name is Christopher Tseng. I am currently enrolled in the Dev Bootcamp Program. This site will contain my portfolio of my work as well as a documentation of my experiences throughout the program.</p>
+        <p>As we write larger and more complex coding solutions, scope will take on a larger role and understanding variable scope will be crucial. In ruby, there are five types of variable scope that are the most important to understand. Global, Class, Instance, Local, and Constant variable scopes. </p>
+
+        <p>To begin, scope refers to the visibility and accessibility of certain variables within a program. I like to think of it like the scope of a pair of binoculars. Certain binoculars have larger lenses and thus have a greater range of visibility while smaller, local pairs probably have a must shorter range and visibility.</p>
+
+        <p>Local Scope: <br>
+        This is probably the most common type of variable used in Ruby. These variables do not need any additional indicators other than the name of the variable itself. It will hold the variable and its scope is within any block it is in. If the variable is within a loop, it will only exist within the loop. If it within a method, it will only exist within the method. In the example below, the local_variable was created within the .times loop, but when we try to call the variable outside the block (do… end), it will call and error.
+        </p>
+
+        <img src="example_1.png" / id="body_img_small">
+        <img src="example_2.png" / id="body_img_2">
+
+        <p>Instance Scope:<br>
+          This is another very common variable that are closely tied to the use of classes. Often classes hold multiple methods that create one object and manage all of its behaviors. However, if we only use local variables within each method, it would be difficult for these methods to interact and work together. Instance variables have a scope that begins and ends with a particular instance of a class. Which allows any of the methods within the class to access and use the instance variables. And these variables are declared with @ signs before the variable itself. </p>
+
+        <img src="example_3.png" / id="body_img_small">
+        <img src="example_4.png" / id="body_img_small">
+
+        <p>Class Scope: <br>
+          This is a variable that can be confused with the Instance scope. They both have scopes that exist within a class, but class variable’s scopes includes ALL instances of this type of class. Instance variable’s scope on the other hand, only exist for each instance of a class. So if there are multiple instances of the Example.new class, the same class scope would be visible in all of those instances. Class variables can be declared with two @, so @@variable.
+        </p>
+
+        <p>Global Scope:<br>
+          Global scope is exactly what it sounds like. It is a variable that is accessible by the entire program. Multiple classes can access it, methods, etc. Global variables can be dangerous however, and are not often used in programs. This is because global variables are accessible by anything in the program, which makes it possible for it to be changed easily. If you do not keep an eye on it, the program can manipulate the global variable when you don’t want to. Global variables are declared with the $ sign. So $global_var is a global variable.</p>
+
+        <p>Constant:<br>
+          It might be strange to have this in a different category than global scope because constants do have global scope. Same as global scope variables. However, I separated them because of its crucial difference. When I say global variables are dangerous because they can be manipulated from anywhere in the program and thus may cause a lot of trouble if you are not careful, a constant variable is the opposite. It had the scope and power of a global variable, but once initialized, it cannot be changed. This is useful in situations where many classes use the same number, the number pi is a good example. It is a constant number that is used in equations often. But once declared as a constant, it cannot be changed. So it is not at risk for unexpected manipulation.</p>
 
 
         <p id="blog-nav">
