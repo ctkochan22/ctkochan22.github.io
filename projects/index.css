@@ -1,0 +1,146 @@
+/*-- --*/
+/*--
+Light Blue/Cyan= #5DA7FF
+Black w/ Blue tint= #130F14
+Bluish Grey= #F5FAFF
+Cyan= #09DBBE
+
+
+* {
+  border: 1px dotted red;
+}
+
+--*/
+
+/*--** HEADER **--*/
+/*-- --*/
+
+header {
+  display: block;
+  position: fixed;
+  height: 40px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: black; /*-- Black/purpe/blue --*/
+}
+
+.nav {
+  display: inline-block;
+  position: relative;
+  height: 40px;
+  width: 120px;
+  left: 5%;
+  border-top: 2px solid #09DBBE;
+
+  text-align: center;
+  color: white;
+  font-family: Tahoma, Arial;
+  font-weight: bold;
+}
+
+.nav:hover {
+  border: 1px solid #09DBBE;
+  background-color: #09DBBE;
+
+  color: black;
+}
+
+#Logo {
+  position: absolute;
+  height: 35px;
+  margin-left: 4px;
+  width: auto;
+}
+
+/*-- --*/
+/*-- --*/
+
+
+/*-- **BODY CONTENT** --*/
+/*-- --*/
+body {
+  background-color: #D1D2D4;
+}
+
+td {
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 20px;
+  vertical-align: text-top;
+}
+
+#table_text {
+  width: 600px;
+}
+
+#panel_1 {
+
+  width: 101%;
+  height: 500px;
+  margin-left: -10px;
+  margin-bottom: 10px;
+
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+#button {
+  display: inline-block;
+  border-top: 2px solid #09DBBE;
+  background-color: white;
+  height: 150px;
+  width: 200px;
+  margin-left: 10px;
+
+  font-size: 25px;
+}
+
+
+/*-- **FOOTER** --*/
+/*-- --*/
+#second {
+
+  position: relative;
+  background-color: #09DBBE;
+  width: 102%;
+  height: 450px;
+  margin-left: -10px;
+  bottom: -10px;
+
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+#profile_img {
+  display: block;
+  position: relative;
+  height: 250px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+h1 {
+
+  text-align: center;
+}
+
+
+#bio {
+  display: block;
+  position: relative;
+  text-align: center;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+#social {
+  display: inline-block;
+  width: 100px;
+  margin-left: 10%;
+
+}
