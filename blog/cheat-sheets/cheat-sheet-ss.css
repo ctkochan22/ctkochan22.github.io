@@ -65,40 +65,85 @@ body {
 
 /*-- **BODY CONTENT** --*/
 /*-- --*/
+#panel_1 {
+
+  /*background-color: green;*/
+/*  background-image: url("../about/japan_back.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;*/
+
+  width: 101%;
+/*  height: 700px;*/
+  margin-left: -10px;
+  margin-bottom: 10px;
+
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+
+
 #content {
   position: static;
   width: 80%;
 
   border-top: 4px solid #09DBBE;
 
-  margin-top: 50px;
+  margin-top: 400px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 20px;
-  background-color: white;
+  background-color: #F5FAFF;
+  padding-left: 10px;
+  padding-bottom: 40px;
+
+  font-family: Arial, Verdana;
+
+
 
 }
 
 h3 {
+
+  font-family: Trebuchet, Verdana;
   margin-bottom:-10px;
   margin-top: -15px;
 }
 
+
+
 #text_body {
   margin-top: 40px;
   margin-left: 20px;
-  margin-right: 30px;
-
-}
-
-#text_body p {
-  margin-left: 20px;
   margin-right: 20px;
 
-/*  text-indent: 30px;*/
+  text-indent: 30px;
   font-family: Trebuchet, Verdana;
   font-size: 14px;
+}
 
+
+
+#cheat_table {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+th {
+  border-right: 2px dotted black;
+}
+
+
+tr:nth-child(even) {background: #CCC}
+tr:nth-child(odd) {background: #FFF}
+
+
+td {
+  border-right: 2px dotted black;
+}
+
+
+#bold {
+  font-weight: bold;
 }
 
 #blog-nav {
@@ -107,7 +152,31 @@ h3 {
   font-weight: bold;
 }
 
+#body_img_1 {
+  width: 700px;
+  height: auto;
+}
 
+#body_img_2 {
+  border-top: 2px solid #09DBBE;
+  width: 80%;
+}
+
+#body_img_small {
+  width: 400px;
+  height: auto;
+
+  border-top: 2px solid #09DBBE;
+}
+
+#background_img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+
+  margin-top: -20px;
+}
 
 /*-- **FOOTER** --*/
 /*-- --*/
@@ -139,6 +208,7 @@ h1 {
   text-align: center;
 }
 
+
 #bio {
   display: block;
   position: relative;
@@ -148,9 +218,12 @@ h1 {
   margin-right: auto;
 }
 
+
 #social {
   display: inline-block;
   width: 100px;
   margin-left: 10%;
 
 }
+
+
