@@ -26,37 +26,37 @@
       <p>August 2nd, 2015</p>
 
       <div id="text_body">
-        <p>
+        <p id="indent">
           Every time you save, whether its saving the work you did on a word document or the progress you made in a video game, it is a form of version control.  The main reason people save their work is for the fear of suddenly losing their progress. If you are three hours into writing an essay and suddenly your computer shuts down, the act of saving the file determines whether you start over from scratch, or you start from the last time you saved. The less prominent reason why people save their work after making big chunks of progress, is so that if they were to do something wrong, they can undo their mistakes by reverting back to their last saved version.
         </p>
-        <p>
+        <p id="indent">
             However, what if you already saved since making that mistake?
         </p>
-        <p>
+        <p id="indent">
             For most programs, you are out of luck. From Word to Photoshop, unless you 'Saved As' as a new version, you will have to backtrack to resolve your mistake. But some programs have a more powerful and expansive form of version control. A form of version control that keeps multiple saved versions of your file, so that even if your mistake precedes your last save, you can revert to an even earlier version. Git is one of those more powerful forms of version control.
         </p>
 
-        <p>
+        <p id="indent">
             Git is a local software program that handles version control for specified files. It is a smarter version of Word’s “Save” and “Save As” because every time you save or “commit” changes, it will save that version. Committing in Git is similar to doing a “Save As” on your essay every time you make a notable amount of progress, which will allow you to revert back to any one of your saved versions. However, Git organizes these versions so that they do not clutter your folders.
         </p>
 
-        <p>
+        <p id="indent">
             Ok, up until now, I have been describing version control, but I haven’t done Git’s system justice because it is much more elegantly done than being an organizer for “Save As” files. When you “Save As” a version of a word document, you are creating two completely new files. This system, depending on the size of the file and the number of versions saved, can take up quite a lot of space. In order to optimize that space, Git breaks down a file into multiple parts. Once additions or changes have been made and the file is saved or “committed,” Git compares the last version to the new version that is currently being saved. Git will then note which parts of the file have been changed, and only keep those changes.
         </p>
 
-        <p>
+        <p id="indent">
             Imagine a large Power Point presentation. If you were to save multiple versions of a Powerpoint presentation that differ from each other only slightly (maybe only two slides are different), Microsoft’s version control system will create and store two separate files, each containing every slide, to manage the changes. However, Git does this more elegantly. Git will take a snapshot of the original slides, then compares each slide to find the slides that have changes in them, and then Git will save the differing slides. This makes Git’s version control much lighter.
         </p>
 
-        <p>
+        <p id="indent">
             Another aspect of Git’s version control that makes it stand out, is its integrated capability of pushing and pulling versions to other computers. This allows for multiple people to work on one project while utilizing the powers of version control. You and a partner can work on a powerpoint presentation separately while Git manages the file and marks the changes. However, pushing and pulling files to and from different computers forces both computers to be turned on and connected to the network, which is not always possible.
         </p>
 
-        <p>
+        <p id="indent">
             GitHub is a web-based service that compliments Git’s collaborative ability by storing files on remote servers (the cloud). Essentially, GitHub allows Git users to pull and push changes and versions of a file to a remote server that all team members can access. In addition, GitHub provides an interface that allows users to view and compare changes, approve applying changes to the original file, etc.
         </p>
 
-        <p>
+        <p id="indent">
             As a programmer, storing your code on GitHub comes with many benefits. First, storing your code on GitHub makes it remote and thus accessible from any computer with network access. Second, GitHub protects the original code and lets managers apply any changes at their discretion. Third, coworkers can all work on the same code file and GitHub manages those changes and helps coworkers keep track of what their teammates are working on/doing.
         </p>
 
