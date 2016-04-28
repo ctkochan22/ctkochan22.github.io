@@ -180,3 +180,9 @@ p.copyright {
 #test {
     vertical-align: center;
 }
+
+#section_title {
+    text-align: center;
+    margin: 0;
+    font-size: 3.5em;
+}
