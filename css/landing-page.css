@@ -4,6 +4,8 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+
+
 body,
 html {
     width: 100%;
@@ -22,7 +24,7 @@ h6 {
 }
 
 .topnav {
-    font-size: 14px; 
+    font-size: 14px;
 }
 
 .lead {
@@ -35,7 +37,7 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
+    background: url(../img/bamboo_home.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -167,4 +169,20 @@ footer {
 
 p.copyright {
     margin: 15px 0 0;
+}
+
+.icons {
+    margin-right: 10px;
+    font-size: 0.8em;
+
+}
+
+#test {
+    vertical-align: center;
+}
+
+#section_title {
+    text-align: center;
+    margin: 0;
+    font-size: 3.5em;
 }

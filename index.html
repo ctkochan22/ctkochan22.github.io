@@ -32,38 +32,6 @@
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-        <div class="container topnav">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand topnav" href="#">Start Bootstrap</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
 
     <!-- Header -->
     <a name="about"></a>
@@ -73,18 +41,18 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
-                        <h1>Landing Page</h1>
-                        <h3>A Template by Start Bootstrap</h3>
+                        <h1>Chris Kosuke Tseng</h1>
+                        <h3>Full-Stack Developer and Digital Artist</h3>
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
                             <li>
-                                <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                                <a href="#container_b" class="btn btn-default btn-lg" id="project_button"><span class="icons glyphicon glyphicon-scissors" aria-hidden="true"></span><span class="network-name">Projects</span></a>
                             </li>
                             <li>
-                                <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                                <a href="https://github.com/ctkochan22" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                             </li>
                             <li>
-                                <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                                <a href="https://www.linkedin.com/in/cktseng" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
                             </li>
                         </ul>
                     </div>
@@ -99,19 +67,30 @@
 
     <!-- Page Content -->
 
-	<a  name="services"></a>
-    <div class="content-section-a">
+	<a  name="projects"></a>
+    <div class="content-section-b" id='container_b' style="padding-top:10px; padding-bottom: 5px;">
+        <div class="container">
+            <div class="row">
+                <h1 id="section_title">Projects</h1>
+                <hr class="intro-divider">
+            </div>
+        </div>
+    </div>
 
+    <div class="content-section-a" >
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Death to the Stock Photo:<br>Special Thanks</h2>
-                    <p class="lead">A special thanks to <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a> for providing the photographs that you see in this template. Visit their website to become a member.</p>
+                    <h2 class="section-heading">QuickPool</h2>
+                    <h3 class="section-heading">A Civic Hackathon Project</h3>
+                    <p class="lead">Quickpool is a simple web application that makes it easier to create carpools based purely on user demand. </p>
+                    <p class="lead">Built with Ruby on Rails and utilizes GeoKit and Twilio functionality. </p>
+                    <a href="https://github.com/chdmark/QuickPool" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                 </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/ipad.png" alt="">
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6 img-thumbnail">
+                    <img class="img-responsive" src="img/quickpool_ss2.png" alt="">
                 </div>
             </div>
 
@@ -228,6 +207,9 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Global JS Tools -->
+    <script src="js/global.js"></script>
 
 </body>
 
