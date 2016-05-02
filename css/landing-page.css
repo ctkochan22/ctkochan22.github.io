@@ -187,3 +187,7 @@ p.copyright {
     font-size: 3.5em;
 }
 
+.pop_up_content {
+    position: absolute;
+    margin-left: 30%;
+}
