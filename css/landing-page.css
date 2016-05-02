@@ -191,3 +191,14 @@ p.copyright {
     position: absolute;
     margin-left: 30%;
 }
+
+#contact_info {
+    position: absolute;
+    background-color: #f8f8f8;
+    border:1px solid transparent;
+    border-radius:4px;
+    margin-top: 5%;
+    padding-top: 10px;
+    width: 30%;
+    display: none;
+}
