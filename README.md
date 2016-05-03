@@ -1,26 +1,18 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [Landing Page](http://startbootstrap.com/template-overviews/landing-page/)
+# Chris Kosuke Tseng
 
-[Landing Page](http://startbootstrap.com/template-overviews/landing-page/) is a multipurpose landing page template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
+[To View Personal Page](http://ctkochan22.github.io/)
 
-## Getting Started
+## About Me
 
-To use this template, choose one of the following options to get started:
-* Download the latest release on Start Bootstrap
-* Fork this repository on GitHub
+I am a full-stack developer with a strong background in market research. I am extremely interested in how people engage with a product and experience a brand. After doing everything in marketing from writing website copy for start-ups to market research for beer & spirit brands, I transitioned into development because I wanted to actually build the services consumers use and need.
 
-## Bugs and Issues
+I also have experience in digital illustration, half from work, half from creating labels for my house’s homebrew and bringing my super secret graphic novel to life.
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/IronSummitMedia/startbootstrap-landing-page/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/landing-page/).
+## Projects
 
-## Creator
+[QuickPool](https://github.com/chdmark/QuickPool)
 
-Start Bootstrap was created by and is maintained by **David Miller**, Managing Parter at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/).
+[API-Pathfinder/Hashlate](https://github.com/ctkochan22/hashlate)
 
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
+[Legislative](https://github.com/ctkochan22/legislative)
 
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2015 Iron Summit Media Strategies, LLC. Code released under the [Apache 2.0](https://github.com/IronSummitMedia/startbootstrap-landing-page/blob/gh-pages/LICENSE) license.
