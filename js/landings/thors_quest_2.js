@@ -4,9 +4,9 @@ $(document).ready(function(){
     console.log("Hello!")
     var answer = $("input[name='answer']").val().toLowerCase();
     console.log(answer);
-    if (answer == 'aegir') {
+    if (answer == 'kezar pub' || answer == "kezar's pub" || answer== "kezars pub") {
       console.log("Success!");
-      window.location.replace("http://ctkochan22.github.io/landings/thors_quest_2");
+      window.location.replace("http://ctkochan22.github.io/landings/thors_quest_3");
     } else {
       console.log("Fail!");
       $('#answer_form')[0].reset();
