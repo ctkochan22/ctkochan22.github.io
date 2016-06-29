@@ -4,7 +4,7 @@ $(document).ready(function(){
     console.log("Hello!")
     var answer = $("input[name='answer']").val().toLowerCase();
     console.log(answer);
-    if (answer == 'capital') {
+    if (answer == 'capital' || answer== 'the capital') {
       console.log("Success!");
       window.location.replace("http://ctkochan22.github.io/landings/thors_quest_final");
     } else {
