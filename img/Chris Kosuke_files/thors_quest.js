@@ -6,7 +6,7 @@ $(document).ready(function(){
     console.log(answer);
     if (answer == 'aegir') {
       console.log("Success!");
-      window.location.replace("http://ctkochan22.github.io/landings/thors_quest_2");
+      // window.location.replace("http://ctkochan22.github.io/landings/thors_quest_2");
     } else {
       console.log("Fail!");
       $('#answer_form')[0].reset();
