@@ -39,7 +39,8 @@ h6 {
     text-align: center;
     color: #000000;
 
-    background-size: cover;
+    background-image: url("../img/cat_burger_space.jpg");
+    background-size: 300px;
 }
 
 .intro-message {
@@ -49,7 +50,8 @@ h6 {
     margin-bottom: 10%;
     width: 100%;
     padding: 10%;
-    background: url(../img/temp_partchment.jpg) no-repeat center;
+    background: #FFFFFF;
+    opacity: 0.9;
 }
 
 .intro-message > h1 {
