@@ -1,4 +1,4 @@
-# Chris Kosuke Tseng
+# Kosuke Chris Tseng Yoshioka
 
 [To View Personal Page](http://ctkochan22.github.io/)
 
