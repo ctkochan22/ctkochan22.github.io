@@ -202,3 +202,8 @@ p.copyright {
     width: 30%;
     display: none;
 }
+
+/* Document Icon too close to the text. Other Icons are fine */
+.fa-file-text {
+    margin-right: 2px;
+}
