@@ -2,10 +2,21 @@ $(document).ready(() => {
     console.log('Running JS');
 
     let guesses = [];
-    let number = Math.floor(Math.random() * 50);
+    let number = null;
     $('#binarySearchStart').on('click', (e) => {
         e.preventDefault();
-        console.log('Starting Binary Game!');
+
+        // If number isn't set we are starting a agame
+        if ($('input[id="binarySearchStart"').val() === 'Start Game') {
+            console.log('Starting Binary Game!');
+            $('input[id="binarySearchStart"').val('Reset Game');
+            number = Math.floor(Math.random() * 50);
+        } else {
+            console.log('Resetting game');
+            $('input[id="binarySearchStart"').val('Start Game');
+            number = null;
+            guesses = [];
+        }
 
         // Show instructions
         $('#binary_game_message').html(
@@ -13,8 +24,6 @@ $(document).ready(() => {
             '<p>Pick the middle to find the answer most efficiently</p>' +
             '<p>Guesses: <span id="guesses"></span></p>'
         );
-
-        // Lets generate random number
 
         // Create input form
         $('#binary_game_container').append(
@@ -50,17 +59,26 @@ $(document).ready(() => {
             // Push into guesses
             guesses.push(ans);
             $('#guesses').html(guesses.join(', '));
-
             if (ans === number) {
-                $('#binary_error_message').html(`You guessed it right in ${guess.length + 1} tries!`);
+                $('#binary_error_message').html(`You guessed it right in ${guesses.length} tries!`);
+                number = null;
+                guesses = [];
+
+                return;
             }
 
             if (ans < number) {
+                console.log('Too Low');
                 $('#binary_error_message').html('Too low!');
+
+                return;
             }
 
             if (ans > number) {
-                ('#binary_error_message').html('Too low!');
+                console.log('Too High');
+                $('#binary_error_message').html('Too High!');
+
+                return;
             }
         })
 
