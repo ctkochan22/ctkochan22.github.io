@@ -1,4 +1,5 @@
 $(document).ready(() => {
+
     console.log('Running JS');
 
     let guesses = [];
@@ -81,10 +82,15 @@ $(document).ready(() => {
                 return;
             }
         })
-
-        // User inputs guess
-        // Display Smaller or Greater
-        // Displays guesses
-        // Shows 
     })
+
+    let testArray = [9, -2, 5, -4, 1, 2];
+    let sorted = partition(testArray, 0, 5);
+    // console.log(sorted);
+
+    testArray = [-2, 3, -1, 5, 4, -3, 0];
+    sorted = partition(testArray, 0, testArray.length - 1);
+    // console.log(sorted);
 });
+
+
