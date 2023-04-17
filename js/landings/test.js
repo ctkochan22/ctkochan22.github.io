@@ -23,22 +23,8 @@
 //     return i + 1;
 // }
 
-// function quickSort(arr, l, r) {
-//     console.log(l);
-//     console.log(r);
-//     if (l >= r) {
-//         return;
-//     }
-//     let p = partition(arr, l, r);
-
-//     quickSort(arr, l, p -1);
-//     quickSort(arr, p, r);
-//     console.log(arr);
-// }
 
 function swap(items, leftIndex, rightIndex){
-    console.log('Swapping ', items[leftIndex]);
-    console.log('Swapping ', items[rightIndex]);
     var temp = items[leftIndex];
     items[leftIndex] = items[rightIndex];
     items[rightIndex] = temp;
@@ -76,3 +62,6 @@ function quickSort(items, left, right) {
     }
     return items;
 }
+
+
+
