@@ -88,4 +88,20 @@ function exactSum(arr, tgt) {
     return false;
 }
 
+function combineSortedArrays(arr1, arr2) {
+    let i = j = 0;
+    let merged = [];
+    while i < arr1.length && j < arr2.length {
+        // if left array is smaller, push and increment i
+        if (arr1[i] < arr2[j]) {
+            merged.push(arr1[i]);
+            i++;
+        } else {
+        // if right array is smaller, push right num and increment j
+            merged.push(arr2[j]);
+            j++;
+        }
+    }
+}
+
 
