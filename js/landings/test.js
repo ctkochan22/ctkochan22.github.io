@@ -91,7 +91,16 @@ function exactSum(arr, tgt) {
 function combineSortedArrays(arr1, arr2) {
     let i = j = 0;
     let merged = [];
-    while i < arr1.length && j < arr2.length {
+    while (i < arr1.length || j < arr2.length) {
+        // if one is exhuasted, just merge the rest of the array and break
+        if (i > arr1.length && j < arr2.length) {
+            merged.push(...arr2);
+            break;
+        } else if (j > arr2.length && i < arr1.length) {
+            merged.push(...arr1);
+            break;
+        }
+
         // if left array is smaller, push and increment i
         if (arr1[i] < arr2[j]) {
             merged.push(arr1[i]);
@@ -102,6 +111,55 @@ function combineSortedArrays(arr1, arr2) {
             j++;
         }
     }
+
+    return merged;
 }
+
+function pangram(sentence) {
+    let alpha = new Set(sentence);
+    return alpha.length === 26;
+}
+
+function findWinners (matches) {
+    let winnerMap = new Map();
+
+    // Loop 
+    for (let result of matches) {
+        if (!winnerMap.has(result[0])) {
+            winnerMap.set(result[0], 0);
+        }
+
+        winnerMap.set(result[1], winnerMap.get(result[1]) + 1 || 1);
+    }
+
+    // Should have map all winners with their losses
+    let undefeated = [];
+    let winners = [];
+    winnerMap.forEach((value, key) => {
+        if (value === 0) {
+            undefeated.push(key);
+        } else if (value === 1) {
+            winners.push(key);
+        }
+    });
+
+    return [undefeated.sort(), winners.sort()];
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
