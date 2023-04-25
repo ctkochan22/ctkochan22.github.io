@@ -146,10 +146,42 @@ function findWinners (matches) {
     return [undefeated.sort(), winners.sort()];
 }
 
+function largestUniqueNumber (nums) {
+    let numMap = new Map();
+    for (let num of nums) { // O(n)
+        numMap.set(num, numMap.get(num) + 1 || 1);
+    }
 
+    let max = -1;
+    numMap.forEach((value, key) => { // O(m)
+        if (value === 1) {
+            max = Math.max(max, key);
+        }
+    });
 
+    return max;
+}
 
+function maxNumberOfBallons (text) {
+    let ballonMap = new Map([['b', 0], ['a', 0], ['n', 0]]);
+    let doubleMap = new Map([['l', 0], ['o', 0]]);
 
+    for (let c of text) {
+        if (ballonMap.has(c)) {
+            ballonMap.set(c, ballonMap.get(c) + 1);
+        }
+
+        if (doubleMap.has(c)) {
+            doubleMap.set(c, doubleMap.get(c) + 1);
+        }
+    }
+
+    // Get min of ballonMap
+    let ballonMin = Math.min(Array.from(ballonMap.values()));
+    let doubleMin = Math.floor(Math.min(Array.from(doubleMap.values()))/2);
+
+    return Math.min(ballonMin, doubleMin);
+}
 
 
 
