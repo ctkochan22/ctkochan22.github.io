@@ -183,13 +183,96 @@ function maxNumberOfBallons (text) {
     return Math.min(ballonMin, doubleMin);
 }
 
+function groupAnagrams (strs) {
+    let anaMap = {};
+
+    for (let word of strs) { // O(n)
+        let sorted = word.split('').sort().join('');
+        let value = anaMap[sorted] || [];
+        anaMap[sorted] = [...value, word];
+    }
+
+    let ans = [];
+    for (const key in anaMap) {
+        ans.push(anaMap[key]);
+    }
+
+    return ans;
+}
 
 
+function minimumCardPickup (cards) {
+    // We are going to iterate through the numbers
+    let cardMap = new Map();
+    let curr = null;
+    for (let i = 0; i < cards.length; i++) {
+        // If it exists, we need to determine the index difference
+        if (cardMap.has(cards[i])) {
+            curr = curr ? Math.min(curr, i - cardMap.get(cards[i])) : i - cardMap.get(cards[i]);
+        }
 
+        // Now update or set the cardNum into the map with the index as the value
+        cardMap.set(cards[i], i);
+    }
 
+    // Since we are inclusive, we need to add 1
+    return curr ? curr + 1 : -1;
+}
 
+function maximumSum (nums) {
+    let sumMap = {};
+    let curr = -1;
+    for (let n of nums) {
+        let sumDigit = n;
+        if (n > 9) {
+            let arr = n.toString().split('');
+            sumDigit = parseInt(arr[0]) + parseInt(arr[1]);
+        }
 
+        // Check if new max is king
+        if (sumMap[sumDigit] !== undefined) {
+            curr = Math.max(curr, sumMap[sumDigit] + n);
+        }
 
+        // Set sumDigit in obj with value being the largest 
+        sumMap[sumDigit] = Math.max((sumMap[sumDigit] || -1), n);
+    }
+
+    return curr;
+}
+
+function sumDigit(digits) {
+    // Turn to string
+    let arr = digits.toString().split('');
+    return parseInt(arr[0]) + parseInt(arr[1]);
+}
+
+var maximumSumTwp = function(nums) {
+    let getDigitSum = num => {
+        let digitSum = 0;
+        while (num > 0) {
+            digitSum += num % 10;
+            num = Math.floor(num / 10);
+        }
+        return digitSum;
+    }
+
+    let sumMap = {};
+    let curr = -1;
+    for (let n of nums) {
+        let sumDigit = getDigitSum(n);
+
+        // Check if new max is king
+        if (sumMap[sumDigit] !== undefined) {
+            curr = Math.max(curr, sumMap[sumDigit] + n);
+        }
+
+        // Set sumDigit in obj with value being the largest
+        sumMap[sumDigit] = Math.max((sumMap[sumDigit] || -1), n);
+    }
+
+    return curr;
+};
 
 
 
