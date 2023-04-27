@@ -274,6 +274,78 @@ var maximumSumTwp = function(nums) {
     return curr;
 };
 
+// grid = [[3,2,1],[1,7,6],[2,7,7]]
+
+function equalPairs (grid) {
+    let rowMap = {};
+    let columnArray = [];
+    let ans = 0;
+
+    // Add each row as a string hash
+    for (let i = 0; i < grid.length; i++) {
+        let key = grid[i].join(',');
+        rowMap[key] = rowMap[key] + 1 || 1;
+
+        for (let j = 0; j < grid.length; j++) {
+            // Insert each row's number with associated index of the column
+            columnArray[j] = [...(columnArray[j] || []), grid[i][j]];
+        }
+    }
+
+    for (let column of columnArray) {
+        let key = column.join(',');
+        if (rowMap[key] !== undefined) {
+            ans += rowMap[key];
+        }
+    }
+
+    return ans;
+}
+// Looking up if I can join int -- it'll turn it into a string!
+// Split array into sub ararys -- no dice
+
+
+function canConstruct (ransomNote, magazine) {
+    let magMap = new Map();
+
+    // Hash map magazine
+    for (let char of magazine) {
+        magMap.set(char, magMap.get(char) + 1 || 1);
+    }
+
+    // Iterate through ransomNote and decrement mag map
+    for (let char of ransomNote) {
+        let count = magMap.get(char);
+
+        if (magMap.get(char)) {
+            magMap.set(char, count - 1);
+        } else {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+
+function numJewelsInStones (jewels, stones) {
+    const jewelSet = new Set(jewels);
+
+    let ans = 0;
+
+    for (let char of stones) {
+        if (jewelSet.has(char)) {
+            ans++;
+        }
+    }
+
+    return ans;
+};
+
+
+
+
+
 
 
 
